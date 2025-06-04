@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nombre del Tema</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('pub.png'); /* Asegúrate de que pub.png esté en la misma carpeta */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+        .cuadro-titulo, .cuadro-texto {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-top: 30px;
+      padding: 20px 25px;
+      width: 90%;
+      max-width: 600px; /* Antes era 800px, ahora más pequeño */
+    }
+
+
+    .cuadro-titulo h1 {
+      margin: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    .cuadro-texto p {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #555;
+      text-align: justify;
+    }
+
+    .botones {
+      margin: 30px 0;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .boton {
+      padding: 12px 24px;
+      background-color: orange;
+      color: white;
+      border: 2px solid orange;
+      border-radius: 10px;
+      font-size: 1em;
+      text-decoration: none;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .boton:hover {
+      background-color: darkorange;
+      border-color: darkorange;
+    }
+
+    @media (max-width: 600px) {
+      .cuadro-titulo h1 {
+        font-size: 1.4em;
+      }
+
+      .cuadro-texto p {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cuadro-titulo">
+    <h1>Problematica</h1>
+  </div>
+
+  <div class="cuadro-texto">
+    <p>
+      A pesar del éxito de las exportaciones de aguacate mexicano a Estados Unidos, la 
+dependencia excesiva de un solo mercado representa un riesgo considerable. Las 
+variaciones en políticas arancelarias, regulaciones fitosanitarias y acuerdos comerciales 
+pueden afectar negativamente la estabilidad del sector. 
+La falta de diversificación limita el crecimiento del mercado del aguacate y expone a 
+los productores a condiciones adversas impuestas por un único país importador. Por ello, es 
+fundamental explorar nuevas oportunidades comerciales en mercados emergentes, como 
+Europa, Asia y Medio Oriente, donde la demanda de productos saludables y orgánicos ha 
+aumentado en los últimos años. 
+Este estudio busca responder a las siguientes preguntas: ¿Cuáles son los principales 
+mercados alternativos para la exportación del aguacate mexicano? ¿Qué estrategias pueden 
+implementarse para facilitar la entrada y consolidación en estos mercados? ¿Cuáles son los 
+principales retos logísticos y regulatorios en la diversificación de destinos de exportación? 
+A través de un análisis detallado, se pretende ofrecer recomendaciones estratégicas 
+para ampliar la presencia del aguacate mexicano en el comercio internacional y fortalecer su 
+competitividad global.
+    </p>
+  </div>
+
+  <div class="botones">
+    <a href="anterior.html" class="boton">Atrás</a>
+    <a href="index.html" class="boton">Inicio</a>
+    <a href="siguiente.html" class="boton">Siguiente</a>
+  </div>
+
+</body>
+</html>
