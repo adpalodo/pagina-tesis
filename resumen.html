@@ -9,7 +9,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-image: url('pub.png'); /* Asegúrate de que pub.png esté en la misma carpeta */
+      background-image: url('pub.png');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -18,20 +18,29 @@
       align-items: center;
     }
 
-        .cuadro-titulo, .cuadro-texto {
+    .cuadro-titulo, .cuadro-texto {
       background-color: rgba(255, 255, 255, 0.95);
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       margin-top: 30px;
       padding: 20px 25px;
       width: 90%;
-      max-width: 600px; /* Antes era 800px, ahora más pequeño */
-    }
-    .mostrar {
-      opacity: 1;
-      transform: translateY(0);
+      max-width: 600px;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: slideUp 0.6s ease-out forwards;
     }
 
+    .cuadro-texto {
+      animation-delay: 0.2s;
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
     .cuadro-titulo h1 {
       margin: 0;
@@ -69,33 +78,17 @@
       background-color: darkorange;
       border-color: darkorange;
     }
-
-    @media (max-width: 600px) {
-      .cuadro-titulo h1 {
-        font-size: 1.4em;
-      }
-
-      .cuadro-texto p {
-        font-size: 0.95em;
-      }
-    }
   </style>
 </head>
 <body>
 
   <div class="cuadro-titulo">
-    <h1>Resumen</h1>
+    <h1>Nombre del Tema</h1>
   </div>
 
   <div class="cuadro-texto">
     <p>
-      El artículo que nos ocupa estudia las estrategias para la exportación con las que poder 
-diversificar  del aguacate mexicano más allá de las fronteras, y, en este sentido, se detectan 
-oportunidades en ciertos mercados emergentes y estrategias clave para poder penetrar en 
-algún destino en particular. Mediante el análisis de las circunstancias económicas, logísticas 
-y normativas, se plantea una serie de directrices que posibilitarán poder aumentar la 
-presencia del aguacate mexicano en mercados internacionales, en favor de reducir la 
-dependencia con un sólo país y fomentar la estabilidad del sector agrícola.
+      Este es un ejemplo de cómo se desplaza el contenido desde abajo cuando se entra a la página. Aquí puedes colocar el texto correspondiente a esta sección de tu proyecto.
     </p>
   </div>
 
@@ -104,15 +97,6 @@ dependencia con un sólo país y fomentar la estabilidad del sector agrícola.
     <a href="index.html" class="boton">Inicio</a>
     <a href="siguiente.html" class="boton">Siguiente</a>
   </div>
-<script>
-    // Activa animación al cargar
-    window.addEventListener('load', () => {
-      document.querySelectorAll('.animado').forEach(elemento => {
-        setTimeout(() => {
-          elemento.classList.add('mostrar');
-        }, 200); // ligero retraso
-      });
-    });
-  </script>
+
 </body>
 </html>
