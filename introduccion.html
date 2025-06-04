@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Título de la página</title>
+  <title>Nombre del Tema</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-image: url('pub.jpg'); /* Asegúrate de que pub.jpg esté en la misma carpeta */
+      background-image: url('pub.png'); /* Asegúrate de que pub.png esté en la misma carpeta */
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -50,9 +50,9 @@
 
     .boton {
       padding: 12px 24px;
-      background-color: #ffffff;
-      color: #333;
-      border: 2px solid #333;
+      background-color: orange;
+      color: white;
+      border: 2px solid orange;
       border-radius: 10px;
       font-size: 1em;
       text-decoration: none;
@@ -61,8 +61,18 @@
     }
 
     .boton:hover {
-      background-color: #333;
-      color: #fff;
+      background-color: darkorange;
+      border-color: darkorange;
+    }
+
+    @media (max-width: 600px) {
+      .cuadro-titulo h1 {
+        font-size: 1.4em;
+      }
+
+      .cuadro-texto p {
+        font-size: 0.95em;
+      }
     }
   </style>
 </head>
