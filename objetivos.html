@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Nombre del Tema</title>
+  <title>Objetivos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-image: url('pub.png'); /* Asegúrate de que pub.png esté en la misma carpeta */
+      background-image: url('pub.png');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -18,16 +18,29 @@
       align-items: center;
     }
 
-        .cuadro-titulo, .cuadro-texto {
-      background-color: rgba(255, 255, 255, 0.95);
+    .cuadro-titulo, .cuadro-texto {
+      background-color: rgba(255, 255, 255, 0.65);
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       margin-top: 30px;
       padding: 20px 25px;
-      width: 90%;
-      max-width: 600px; /* Antes era 800px, ahora más pequeño */
+      width: 85%;
+      max-width: 500px;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: slideUp 0.6s ease-out forwards;
     }
 
+    .cuadro-texto {
+      animation-delay: 0.2s;
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
     .cuadro-titulo h1 {
       margin: 0;
@@ -65,16 +78,6 @@
       background-color: darkorange;
       border-color: darkorange;
     }
-
-    @media (max-width: 600px) {
-      .cuadro-titulo h1 {
-        font-size: 1.4em;
-      }
-
-      .cuadro-texto p {
-        font-size: 0.95em;
-      }
-    }
   </style>
 </head>
 <body>
@@ -84,28 +87,13 @@
   </div>
 
   <div class="cuadro-texto">
-    <p>
-  Objetivo General 
-Analizar las estrategias necesarias para diversificar la exportación de aguacate 
-mexicano más allá del mercado estadounidense, identificando mercados emergentes con 
-alto potencial de consumo, evaluando factores económicos, regulatorios y logísticos que 
-inciden en la diversificación de mercados y diseñando un marco estratégico que facilite su 
-internacionalización. Asimismo, se buscará extraer acciones concretas para potenciar la 
-competitividad del sector aguacatero en mercados internacionales. 
-Objetivos Específicos 
-• Investigar los principales países con oportunidades para exportar el aguacate 
-mexicano. 
-• Analizar la normativa y requisitos fitosanitarios de mercados potencialmente 
-consumidores. 
-• Evaluar las barreras logísticas y comerciales a las que se puede enfrentar la 
-exportación a mercados nuevos y crear un plan de exportación a este nuevo destino 
-    </p>
+    <p>Este es el contenido de la sección 'Objetivos'. Aquí puedes escribir el texto correspondiente a esta parte de tu proyecto.</p>
   </div>
 
   <div class="botones">
-    <a href="anterior.html" class="boton">Atrás</a>
+    <a href="problematica.html" class="boton">Atrás</a>
     <a href="index.html" class="boton">Inicio</a>
-    <a href="siguiente.html" class="boton">Siguiente</a>
+    <a href="justificacion.html" class="boton">Siguiente</a>
   </div>
 
 </body>
