@@ -1,88 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menú</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body, html {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      font-family: sans-serif;
-    }
-
-    .pantalla-menu {
-      background-image: url('image.jpg');
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('fondo');
       background-size: cover;
       background-position: center;
-      height: 100vh;
-      padding: 20px;
-      box-sizing: border-box;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .titulo-nombre {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      margin: 30px 0 20px 0;
+      color: white;
+      text-shadow: 0 0 4px #000;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      max-width: 400px;
+      width: 100%;
+      padding: 0 20px;
+    }
+    .menu-grid a {
+      background-color: orange;
       color: white;
       text-align: center;
-    }
-
-    h1 {
-      font-weight: bold;
-      font-size: 1.6em;
-      margin-bottom: 20px;
-      text-shadow: 1px 1px 2px black;
-    }
-
-    .boton {
-      width: 45%;
-      margin: 5px;
-      padding: 15px;
-      font-size: 1em;
-      background-color: #a2df6c;
-      color: black;
-      border: none;
-      border-radius: 10px;
-      display: inline-block;
+      padding: 12px;
+      border-radius: 15px;
       text-decoration: none;
-      transition: all 0.3s ease;
-      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+      transition: background 0.3s;
     }
-
-    .boton:hover {
-      transform: scale(1.05);
-      box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3);
+    .menu-grid a:hover {
+      background-color: darkorange;
     }
-
-    .boton.regresar {
-      width: 80%;
-      background-color: #a6d4f2;
-      margin-top: 20px;
-    }
-
-    .contenedor-botones {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+    .volver {
+      margin: 30px 0;
+      background-color: #add8e6;
+      padding: 10px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
     }
   </style>
 </head>
 <body>
-
-  <div class="pantalla-menu">
-    <h1>Paola Domínguez</h1>
-
-    <div class="contenedor-botones">
-      <a href="resumen.html" class="boton">Resumen</a>
-      <a href="palabrasclave.html" class="boton">Palabras clave</a>
-      <a href="introduccion.html" class="boton">introducción</a>
-      <a href="problematica.html" class="boton">problematica</a>
-      <a href="objetivos.html" class="boton">objetivos</a>
-      <a href="justificacion.html" class="boton">justificación</a>
-      <a href="marcoteorico.html" class="boton">marco teórico</a>
-      <a href="marcometodologico.html" class="boton">marco metodológico</a>
-      <a href="desarrollo.html" class="boton">desarrollo</a>
-      <a href="conclusiones.html" class="boton">conclusiones</a>
-    </div>
-
-    <a href="iniciar.html" class="boton regresar">Regresar</a>
+  <div class="titulo-nombre">Paola Domínguez</div>
+  <div class="menu-grid">
+    <a href="resumen.html">Resumen</a>
+    <a href="palabras-clave.html">Palabras clave</a>
+    <a href="introduccion.html">Introducción</a>
+    <a href="problematica.html">Problemática</a>
+    <a href="objetivos.html">Objetivos</a>
+    <a href="justificacion.html">Justificación</a>
+    <a href="marco-teorico.html">Marco teórico</a>
+    <a href="marco-metodologico.html">Marco metodológico</a>
+    <a href="desarrollo.html">Desarrollo</a>
+    <a href="conclusiones.html">Conclusiones</a>
   </div>
-
+  <a href="index.html" class="volver">Regresar</a>
 </body>
 </html>

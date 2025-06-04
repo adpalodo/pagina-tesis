@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,67 +10,42 @@
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-image: url('fondo.jpg');
+      background-image: url('principal.png');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
     }
-
-    .cuadro-titulo {
-      background-color: rgba(255, 255, 255, 0.65);
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      padding: 30px 40px;
-      text-align: center;
-      animation: slideUp 0.6s ease-out forwards;
-      opacity: 0;
-      transform: translateY(40px);
-    }
-
-    .cuadro-titulo h1 {
-      margin: 0;
+    .titulo {
+      background-color: rgba(255, 255, 255, 0.75);
+      padding: 20px 40px;
+      border-radius: 20px;
       font-size: 2em;
-      color: #333;
+      font-weight: bold;
+      text-align: center;
+      color: black;
+      margin-bottom: 30px;
     }
-
-    .boton {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 24px;
+    .boton-iniciar {
       background-color: orange;
       color: white;
-      border: 2px solid orange;
-      border-radius: 10px;
-      font-size: 1em;
+      padding: 12px 24px;
+      border-radius: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
       text-decoration: none;
-      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-      transition: all 0.3s ease;
     }
-
-    .boton:hover {
+    .boton-iniciar:hover {
       background-color: darkorange;
-      border-color: darkorange;
-    }
-
-    @keyframes slideUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
   </style>
 </head>
 <body>
-
-  <div class="cuadro-titulo">
-    <h1>Proyecto Terminal</h1>
-    <a href="resumen.html" class="boton">Iniciar</a>
-  </div>
-
+  <div class="titulo">PROYECTO TERMINAL</div>
+  <a href="menu.html" class="boton-iniciar">Iniciar</a>
 </body>
 </html>

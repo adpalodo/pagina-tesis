@@ -1,115 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Objetivos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-image: url('pub.png');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('fondo');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
 
-    .cuadro-titulo, .cuadro-texto {
-      background-color: rgba(255, 255, 255, 0.65);
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      margin-top: 30px;
-      padding: 20px 25px;
-      width: 85%;
-      max-width: 500px;
-      opacity: 0;
-      transform: translateY(40px);
-      animation: slideUp 0.6s ease-out forwards;
-    }
+  .container {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 40px auto 20px auto;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
 
-    .cuadro-texto {
-      animation-delay: 0.2s;
-    }
+  .titulo {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
 
-    @keyframes slideUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+  .contenido {
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.6;
+  }
 
-    .cuadro-titulo h1 {
-      margin: 0;
-      text-align: center;
-      color: #333;
-    }
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto;
+  }
 
-    .cuadro-texto p {
-      font-size: 1em;
-      line-height: 1.6;
-      color: #555;
-      text-align: justify;
-    }
+  .nav-button {
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
 
-    .botones {
-      margin: 30px 0;
-      display: flex;
-      gap: 15px;
-      justify-content: center;
-    }
+  .nav-button:hover {
+    background-color: darkorange;
+  }
+</style>
 
-    .boton {
-      padding: 12px 24px;
-      background-color: orange;
-      color: white;
-      border: 2px solid orange;
-      border-radius: 10px;
-      font-size: 1em;
-      text-decoration: none;
-      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-      transition: all 0.3s ease;
-    }
-
-    .boton:hover {
-      background-color: darkorange;
-      border-color: darkorange;
-    }
-  </style>
 </head>
 <body>
-
-  <div class="cuadro-titulo">
-    <h1>Objetivos</h1>
+  <div class="container">
+    <div class="titulo">Objetivos</div>
+    <div class="contenido">Analizar las estrategias necesarias para diversificar la exportación de aguacate mexicano más allá del mercado estadounidense, identificando mercados emergentes con alto potencial de consumo, evaluando factores económicos, regulatorios y logísticos que inciden en la diversificación de mercados y diseñando un marco estratégico que facilite su internacionalización. Asimismo, se buscará extraer acciones concretas para potenciar la competitividad del sector aguacatero en mercados internacionales.<br><br>Objetivos Específicos<br><br>• Investigar los principales países con oportunidades para exportar el aguacate mexicano.<br><br>• Analizar la normativa y requisitos fitosanitarios de mercados potencialmente consumidores.<br><br>• Evaluar las barreras logísticas y comerciales a las que se puede enfrentar la exportación a mercados nuevos y crear un plan de exportación a este nuevo destino.<br><br>Imagen</div>
   </div>
-
-  <div class="cuadro-texto">
-    <p>Objetivo General 
-Analizar las estrategias necesarias para diversificar la exportación de aguacate 
-mexicano más allá del mercado estadounidense, identificando mercados emergentes con 
-alto potencial de consumo, evaluando factores económicos, regulatorios y logísticos que 
-inciden en la diversificación de mercados y diseñando un marco estratégico que facilite su 
-internacionalización. Asimismo, se buscará extraer acciones concretas para potenciar la 
-competitividad del sector aguacatero en mercados internacionales. 
- </p>
-  </div>
-<p> Objetivos Específicos 
-• Investigar los principales países con oportunidades para exportar el aguacate 
-mexicano. 
-• Analizar la normativa y requisitos fitosanitarios de mercados potencialmente 
-consumidores. 
-• Evaluar las barreras logísticas y comerciales a las que se puede enfrentar la 
-exportación a mercados nuevos y crear un plan de exportación a este nuevo destino 
-</div>
-
-  <div class="botones">
-    <a href="problematica.html" class="boton">Atrás</a>
-    <a href="index.html" class="boton">Inicio</a>
-    <a href="justificacion.html" class="boton">Siguiente</a>
-  </div>
-
+  <div class="nav-buttons"><a href="problematica.html" class="nav-button">Atrás</a><a href="menu.html" class="nav-button">Inicio</a><a href="justificacion.html" class="nav-button">Siguiente</a></div>
 </body>
 </html>
