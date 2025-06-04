@@ -104,6 +104,15 @@ dependencia con un sólo país y fomentar la estabilidad del sector agrícola.
     <a href="index.html" class="boton">Inicio</a>
     <a href="siguiente.html" class="boton">Siguiente</a>
   </div>
-
+<script>
+    // Activa animación al cargar
+    window.addEventListener('load', () => {
+      document.querySelectorAll('.animado').forEach(elemento => {
+        setTimeout(() => {
+          elemento.classList.add('mostrar');
+        }, 200); // ligero retraso
+      });
+    });
+  </script>
 </body>
 </html>
