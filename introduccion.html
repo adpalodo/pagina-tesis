@@ -33,7 +33,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     margin: 40px auto 10px auto;
     padding: 15px 25px;
-    max-width: 500px;
+    max-width: 90%;
     text-align: center;
     font-size: 1.6em;
     font-weight: bold;
@@ -46,7 +46,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     margin: 20px auto;
     padding: 20px;
-    max-width: 650px;
+    max-width: 90%;
     font-size: 1em;
     line-height: 1.6;
     animation: slideUp 1s ease-out forwards;
@@ -72,32 +72,58 @@
   .nav-button:hover {
     background-color: darkorange;
   }
+
+  @media screen and (max-width: 480px) {
+    .titulo-box {
+      font-size: 1.3em;
+      padding: 12px 18px;
+    }
+
+    .contenido-box {
+      font-size: 0.95em;
+      padding: 15px;
+    }
+  }
 </style>
 
 </head>
 <body>
   <div class="titulo-box">Introducción</div>
+
   <div class="contenido-box">
-    <p>El país azteca ocupa el primer lugar en su producción y exportación de
-       aguacate a nivel internacional; el mercado exportador de mayor importancia
-        está en Estados Unidos. No obstante, la elevada dependencia que existe hacia 
-        este mercado se convierte en un gran reto que podría costar la sostenibilidad
-         de la producción y el comercio del aguacate, el cual puede verse amenazado por 
-         la posibilidad de restricciones en políticas comerciales, barreras f itosanitarias, así 
-         como por el deterioro de la misma demanda; así, la diversificación de mercados se
-          convierte en un recurso estratégico para la sostenibilidad y el crecimiento del sector 
-          aguacatero. En esta investigación se evalúan las oportunidades de internacionalización
-           hacia mercados consumidores con alto potencial, así como estrategias para la 
-           internacionalización del aguacate mexicano; además, se analizan factores
-            económicos, regulatorios y logísticos, así como el impacto de acuerdos
-             comerciales, requisitos fitosanitarios. El objetivo principal de la investigación
-              es establecer un marco estratégico que permita a los productores y exportadores 
-              mexicanos diversificar el destino de sus exportaciones, de manera que se minimice 
-              el riesgo o vulnerabilidad del involucramiento de los productores y exportadores
-              mexicanos en mercados de aguacate a partir de cambios en Estados Unidos.</p> 
-            <p><img src="mundo.png" alt="Descripción de la imagen" width="300" style="display: block; margin: 20px auto;">
-</p> 
+    <p>
+      El país azteca ocupa el primer lugar en su producción y exportación de
+      aguacate a nivel internacional; el mercado exportador de mayor importancia
+      está en Estados Unidos. No obstante, la elevada dependencia que existe hacia 
+      este mercado se convierte en un gran reto que podría costar la sostenibilidad
+      de la producción y el comercio del aguacate, el cual puede verse amenazado por 
+      la posibilidad de restricciones en políticas comerciales, barreras fitosanitarias, así 
+      como por el deterioro de la misma demanda; así, la diversificación de mercados se
+      convierte en un recurso estratégico para la sostenibilidad y el crecimiento del sector 
+      aguacatero.
+    </p>
+    <p>
+      En esta investigación se evalúan las oportunidades de internacionalización
+      hacia mercados consumidores con alto potencial, así como estrategias para la 
+      internacionalización del aguacate mexicano; además, se analizan factores
+      económicos, regulatorios y logísticos, así como el impacto de acuerdos
+      comerciales y requisitos fitosanitarios.
+    </p>
+    <p>
+      El objetivo principal de la investigación es establecer un marco estratégico
+      que permita a los productores y exportadores mexicanos diversificar el destino
+      de sus exportaciones, de manera que se minimice el riesgo o vulnerabilidad del 
+      involucramiento de los productores y exportadores mexicanos en mercados de aguacate 
+      a partir de cambios en Estados Unidos.
+    </p>
+
+    <img src="mundo.png" alt="Descripción de la imagen" width="300" style="display: block; margin: 20px auto;">
   </div>
-  <div class="nav-buttons"><a href="palabras-clave.html" class="nav-button">Atrás</a><a href="menu.html" class="nav-button">Menú</a><a href="problematica.html" class="nav-button">Siguiente</a></div>
+
+  <div class="nav-buttons">
+    <a href="palabras-clave.html" class="nav-button">Atrás</a>
+    <a href="menu.html" class="nav-button">Menú</a>
+    <a href="problematica.html" class="nav-button">Siguiente</a>
+  </div>
 </body>
 </html>
