@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Introduccion</title>
+  <title>Introducción</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
 <style>
@@ -11,39 +10,53 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-image: url('pub.png');
+    background-image: url('todo.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
   }
 
-  .container {
-    background-color: rgba(255, 255, 255, 0.9);
-    margin: 40px auto 20px auto;
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .titulo-box {
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
-    padding: 20px;
-    max-width: 600px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-
-  .titulo {
+    margin: 40px auto 10px auto;
+    padding: 15px 25px;
+    max-width: 500px;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: bold;
-    margin-bottom: 15px;
+    animation: slideUp 0.8s ease-out forwards;
   }
 
-  .contenido {
-    text-align: justify;
+  .contenido-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 650px;
     font-size: 1em;
     line-height: 1.6;
+    animation: slideUp 1s ease-out forwards;
   }
 
   .nav-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin: 30px auto;
+    margin: 40px auto;
   }
 
   .nav-button {
@@ -63,10 +76,28 @@
 
 </head>
 <body>
-  <div class="container">
-    <div class="titulo">Introduccion</div>
-    <div class="contenido"><p>Este es el contenido de la sección 'Introduccion'. Aquí puedes escribir el texto correspondiente a esta parte de tu proyecto.</p></div>
+  <div class="titulo-box">Introducción</div>
+  <div class="contenido-box">
+    <p>El país azteca ocupa el primer lugar en su producción y exportación de
+       aguacate a nivel internacional; el mercado exportador de mayor importancia
+        está en Estados Unidos. No obstante, la elevada dependencia que existe hacia 
+        este mercado se convierte en un gran reto que podría costar la sostenibilidad
+         de la producción y el comercio del aguacate, el cual puede verse amenazado por 
+         la posibilidad de restricciones en políticas comerciales, barreras f itosanitarias, así 
+         como por el deterioro de la misma demanda; así, la diversificación de mercados se
+          convierte en un recurso estratégico para la sostenibilidad y el crecimiento del sector 
+          aguacatero. En esta investigación se evalúan las oportunidades de internacionalización
+           hacia mercados consumidores con alto potencial, así como estrategias para la 
+           internacionalización del aguacate mexicano; además, se analizan factores
+            económicos, regulatorios y logísticos, así como el impacto de acuerdos
+             comerciales, requisitos fitosanitarios. El objetivo principal de la investigación
+              es establecer un marco estratégico que permita a los productores y exportadores 
+              mexicanos diversificar el destino de sus exportaciones, de manera que se minimice 
+              el riesgo o vulnerabilidad del involucramiento de los productores y exportadores
+              mexicanos en mercados de aguacate a partir de cambios en Estados Unidos.</p> 
+            <p><img src="mundo.png" alt="Descripción de la imagen" width="300" style="display: block; margin: 20px auto;">
+</p> 
   </div>
-  <div class="nav-buttons"><a href="palabras-clave.html" class="nav-button">Atrás</a><a href="menu.html" class="nav-button">Inicio</a><a href="problematica.html" class="nav-button">Siguiente</a></div>
+  <div class="nav-buttons"><a href="palabras-clave.html" class="nav-button">Atrás</a><a href="menu.html" class="nav-button">Menú</a><a href="problematica.html" class="nav-button">Siguiente</a></div>
 </body>
 </html>
