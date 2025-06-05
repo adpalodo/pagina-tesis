@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Palabras claves</title>
+  <title>Resumen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
 <style>
@@ -33,7 +33,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     margin: 40px auto 10px auto;
     padding: 15px 25px;
-    max-width: 500px;
+    max-width: 90%;
     text-align: center;
     font-size: 1.6em;
     font-weight: bold;
@@ -46,7 +46,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     margin: 20px auto;
     padding: 20px;
-    max-width: 650px;
+    max-width: 90%;
     font-size: 1em;
     line-height: 1.6;
     animation: slideUp 1s ease-out forwards;
@@ -71,6 +71,19 @@
 
   .nav-button:hover {
     background-color: darkorange;
+  }
+
+  /* Estilo responsivo adicional para pantallas pequeñas */
+  @media screen and (max-width: 480px) {
+    .titulo-box {
+      font-size: 1.3em;
+      padding: 12px 18px;
+    }
+
+    .contenido-box {
+      font-size: 0.95em;
+      padding: 15px;
+    }
   }
 </style>
 
