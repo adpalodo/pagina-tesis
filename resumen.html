@@ -33,7 +33,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     margin: 40px auto 10px auto;
     padding: 15px 25px;
-    max-width: 500px;
+    max-width: 90%;
     text-align: center;
     font-size: 1.6em;
     font-weight: bold;
@@ -46,7 +46,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     margin: 20px auto;
     padding: 20px;
-    max-width: 650px;
+    max-width: 90%;
     font-size: 1em;
     line-height: 1.6;
     animation: slideUp 1s ease-out forwards;
@@ -72,6 +72,19 @@
   .nav-button:hover {
     background-color: darkorange;
   }
+
+  /* Estilo responsivo adicional para pantallas pequeñas */
+  @media screen and (max-width: 480px) {
+    .titulo-box {
+      font-size: 1.3em;
+      padding: 12px 18px;
+    }
+
+    .contenido-box {
+      font-size: 0.95em;
+      padding: 15px;
+    }
+  }
 </style>
 
 </head>
@@ -79,17 +92,23 @@
   <div class="titulo-box">Resumen</div>
   
   <div class="contenido-box">
-    <p> El artículo que nos ocupa estudia las estrategias para la exportación 
+    <p>
+      El artículo que nos ocupa estudia las estrategias para la exportación 
       con las que poder diversificar del aguacate mexicano más allá de las 
       fronteras, y, en este sentido, se detectan oportunidades en ciertos 
       mercados emergentes y estrategias clave para poder penetrar en algún destino 
       en particular. Mediante el análisis de las circunstancias económicas, logísticas 
       y normativas, se plantea una serie de directrices que posibilitarán poder aumentar 
       la presencia del aguacate mexicano en mercados internacionales, en favor de reducir
-       la dependencia con un sólo país y fomentar la estabilidad del sector agrícola.
-      <img src="documento.png" alt="Descripción de la imagen" width="300" style="display: block; margin: 20px auto;">
-</p>  <!-- Aquí va el contenido real de la sección "Resumen" -->
+      la dependencia con un sólo país y fomentar la estabilidad del sector agrícola.
+    </p>  
+    <img src="documento.png" alt="Descripción de la imagen" width="300" style="display: block; margin: 20px auto;">
   </div>
-  <div class="nav-buttons"><span></span><a href="menu.html" class="nav-button">Menú</a><a href="palabras-clave.html" class="nav-button">Siguiente</a></div>
+
+  <div class="nav-buttons">
+    <span></span>
+    <a href="menu.html" class="nav-button">Menú</a>
+    <a href="palabras-clave.html" class="nav-button">Siguiente</a>
+  </div>
 </body>
 </html>
