@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Proyecto Terminal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" as="image" href="principal.jpg">
   <style>
     body {
       margin: 0;
@@ -18,7 +18,18 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100dvh; /* Mejor para móviles */
+      animation: fadeInBody 1.5s ease-in-out;
+      -webkit-animation: fadeInBody 1.5s ease-in-out;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @-webkit-keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     .titulo {
@@ -30,6 +41,29 @@
       text-align: center;
       color: #000;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      animation: slideDown 1s ease-out;
+      -webkit-animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @-webkit-keyframes slideDown {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(-40px);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+      }
     }
 
     .boton-iniciar {
@@ -42,10 +76,48 @@
       font-weight: bold;
       text-decoration: none;
       box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      animation: bounceIn 1s ease-out 0.5s;
+      -webkit-animation: bounceIn 1s ease-out 0.5s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
     }
 
     .boton-iniciar:hover {
       background-color: darkorange;
+    }
+
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      60% {
+        opacity: 1;
+        transform: translateY(-10px);
+      }
+      80% {
+        transform: translateY(5px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @-webkit-keyframes bounceIn {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+      }
+      60% {
+        opacity: 1;
+        -webkit-transform: translateY(-10px);
+      }
+      80% {
+        -webkit-transform: translateY(5px);
+      }
+      100% {
+        -webkit-transform: translateY(0);
+      }
     }
   </style>
 </head>
